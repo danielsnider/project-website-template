@@ -1,3 +1,9 @@
+# Credit
+
+Most of this guide is by [Daniel Snider](https://github.com/danielsnider). I've simply rehosted it here with some tweaks to make it work with GitHub pages.
+
+---
+
 ## Here's my guide on how to make a website like Geoffrey's for Skyline:
 
 [https://skylineprof.github.io/](https://skylineprof.github.io/)

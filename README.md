@@ -94,7 +94,9 @@ There are image paths in the following code `file:line` locations. You should us
 
 ## A webpage for your published paper
 
-> For instance: https://orgName.github.io/customRepo/paper
+> For example: https://skylineprof.github.io/paper/
+>
+> Yours could be: https://orgName.github.io/customRepo/paper
 
 This page has a link, a video, and a citation for your published paper that you can update.
 
@@ -143,21 +145,23 @@ src/components/VideoOverlay.js:38: src="https://youtube..."
   https://blog.logrocket.com/easy-documentation-with-docusaurus/
 
 # Enable Build Website on Push
-https://github.com/[YOUR-USERNAME]/project-website-template/actions
+
+The repository already contains a workflow which builds and deploys the website whenever a commit is made to the master branch. Double check that it is enabled. 
+
+1. Go to your repository on GitHub
+1. Go to the settings tab for the repo
+1. If you don't see "Build and "Deploy" listed on the left, then click the green button to enable Actions.
+    - If you had to enable Actions, commit and push a change to the repo to trigger a first build.
 
 # Publish to GitHub Pages
 
-- Go to your repository on GitHub
-- Go to the settings tab for the repo
-- Scroll down to the **GitHub Pages** section.
-- Set the Source branch to be `gh-pages` (created automatically after push)
-- Set the folder in the branch to be `/(root)`.
-- You don't need to set any custom domain if you don't want to.
-- Save.
-
-The repository already contains a workflow which builds and deploys the website
-whenever a commit is made to the master branch. To set up the URL to redirect
-to this page, follow these instructions:
+1. Go to your repository on GitHub
+1. Go to the settings tab for the repo
+1. Scroll down to the **GitHub Pages** section.
+1. Set the Source branch to be `gh-pages` (created automatically after push)
+1. Set the folder in the branch to be `/(root)`.
+1. You don't need to set any custom domain if you don't want to.
+1. Save.
 
 After this the website should be available at the URL as described in the first part of this guide. You can add it to the `about` section of the repository to give people quick access to the site.
 

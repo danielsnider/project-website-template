@@ -142,7 +142,10 @@ src/components/VideoOverlay.js:38: src="https://youtube..."
 - The best Docusaurus guide that we could find is:
   https://blog.logrocket.com/easy-documentation-with-docusaurus/
 
-# Publishing to GitHub Pages
+# Enable Build Website on Push
+https://github.com/[YOUR-USERNAME]/project-website-template/actions
+
+# Publish to GitHub Pages
 
 - Go to your repository on GitHub
 - Go to the settings tab for the repo

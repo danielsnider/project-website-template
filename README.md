@@ -1,6 +1,6 @@
-# How to make a website like Geoffrey's Skyline
+# How to make a website like Geoffrey's
 
-Skyline Website: [https://skylineprof.github.io/](https://skylineprof.github.io/)
+Geoffrey's Skyline Website: [https://skylineprof.github.io/](https://skylineprof.github.io/)
 
 **_Meta-thought_**: We consider these steps (filling in a template of Geoffrey's website) is a balance of speed of website development and good looks. A faster approach is to use a simple HTML or Markdown page. On the opposite extreme, for a more customized look you can DIY a full website.
 
@@ -29,6 +29,8 @@ Then clone to your machine for local development:
 ```
 git clone https://github.com/danielsnider/project-website-template
 ```
+
+---
 
 **Option 2:** If you want to host this website on the same existing repository as your other code, read the "Other Tips" section at the bottom of this guide and then come back.
 
@@ -69,7 +71,7 @@ You can view the current state of website in your browser by opening [localhost:
 
 # Things to change
 
-## Required to have the website get published properly:
+## Required to have the website published properly:
 
 - Edit the two fields at the top in `docusaurus.config.js`. Make sure you have all the `/` as in the example.
 
@@ -123,35 +125,14 @@ If you have a video, add the URL here:
 ```
 src/components/VideoOverlay.js:38: src="https://youtube..."
 ```
-
-# Miscellaneous notes when developing
-
-- Your updates should live reload if you've run `npm start`, just
-  check your browser for changes.
-
-- This website uses the Docusaurus framework. For documentation on how to do
-  things see: https://v2.docusaurus.io/
-
-- Geoffrey makes use of the documentation functionality (see `docs/` folder which
-  builds https://skylineprof.github.io/docs/), but this has been disabled for now.
-  If you wish to enable them, there are commented out blocks in
-  `docsdocusaurus.config.js` which you can uncomment. They're marked with `NOTE` so you
-  can just search for them. The documentation is generated based on the markdown
-  files in `docs/`, so you can just add your documentation there. Additionally,
-  a comment in `src/pages/index.js` describes what to modify to add a `Docs`
-  button on the front page banner instead of the `Code` one.
-
-- The best Docusaurus guide that we could find is:
-  https://blog.logrocket.com/easy-documentation-with-docusaurus/
-
 # Enable Build Website on Push
 
-The repository already contains a workflow which builds and deploys the website whenever a commit is made to the master branch. Double check that it is enabled. 
+The repository already contains a workflow which builds and deploys the website whenever a commit is made to the master branch. Double check that it is enabled.
 
 1. Go to your repository on GitHub
 1. Go to the settings tab for the repo
 1. If you don't see "Build and "Deploy" listed on the left, then click the green button to enable Actions.
-    - If you had to enable Actions, commit and push a change to the repo to trigger a first build.
+   - If you had to enable Actions, commit and push a change to the repo to trigger a first build.
 
 # Publish to GitHub Pages
 
@@ -191,6 +172,28 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: <website folder>/build # The folder the action should deploy.
 ```
+
+
+# Miscellaneous notes when developing
+
+- Your updates should live reload if you've run `npm start`, just
+  check your browser for changes.
+
+- This website uses the Docusaurus framework. For documentation on how to do
+  things see: https://v2.docusaurus.io/
+
+- Geoffrey makes use of the documentation functionality (see `docs/` folder which
+  builds https://skylineprof.github.io/docs/), but this has been disabled for now.
+  If you wish to enable them, there are commented out blocks in
+  `docsdocusaurus.config.js` which you can uncomment. They're marked with `NOTE` so you
+  can just search for them. The documentation is generated based on the markdown
+  files in `docs/`, so you can just add your documentation there. Additionally,
+  a comment in `src/pages/index.js` describes what to modify to add a `Docs`
+  button on the front page banner instead of the `Code` one.
+
+- The best Docusaurus guide that we could find is:
+  https://blog.logrocket.com/easy-documentation-with-docusaurus/
+
 
 # Credits
 

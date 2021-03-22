@@ -1,22 +1,22 @@
-/**  
+/**
  * TODO: Change the 2 parameters below according to this:
- * 
+ *
  * - url:  "https://<orgName>.github.io/"  (where <orgName> is your username or
  *                                          the new organisation you made)
- * - baseUrl: 
+ * - baseUrl:
  *      - If you chose option 1 from the instructions: "/"
  *      - If you chose option 2 from the instructions: "/customRepo/"
  */
 
-const url = "https://mustafaquraish.github.io/";
-const baseUrl = "/project-website-template/"
-
+const url = "https://danielsnider.github.io/";
+const baseUrl = "/project-website-template/";
 
 ////////////////////////////////////////////////////////////////////////////////
 
 module.exports = {
   title: "Skyline",
-  tagline: "Interactive in-editor computational performance profiling, visualization, and debugging for PyTorch deep neural networks.",
+  tagline:
+    "Interactive in-editor computational performance profiling, visualization, and debugging for PyTorch deep neural networks.",
   url: url,
   baseUrl: baseUrl,
   favicon: "img/favicon.ico",
@@ -32,7 +32,7 @@ module.exports = {
         /**************************************************/
         /* NOTE: Uncomment the block below to enable Docs */
         /**************************************************/
-        
+
         // {
         //   to: "docs/",
         //   activeBasePath: "docs",

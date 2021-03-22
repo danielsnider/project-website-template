@@ -127,17 +127,17 @@ src/components/VideoOverlay.js:38: src="https://youtube..."
 ```
 # Enable Build Website on Push
 
-The repository already contains a workflow which builds and deploys the website whenever a commit is made to the master branch. Double check that it is enabled.
+The repository already contains a GitHub Action which builds and deploys the website whenever a commit is made to the master branch. Double check that it is enabled.
 
 1. Go to your repository on GitHub
-1. Go to the settings tab for the repo
+1. Go to the Actions tab for the repo
 1. If you don't see "Build and "Deploy" listed on the left, then click the green button to enable Actions.
    - If you had to enable Actions, commit and push a change to the repo to trigger a first build.
 
 # Publish to GitHub Pages
 
 1. Go to your repository on GitHub
-1. Go to the settings tab for the repo
+1. Go to the Settings tab for the repo
 1. Scroll down to the **GitHub Pages** section.
 1. Set the Source branch to be `gh-pages` (created automatically after push)
 1. Set the folder in the branch to be `/(root)`.
@@ -199,6 +199,6 @@ jobs:
 
 Website and guide created by:
 
-- Mustafa Quraish 🙏
+- Mustafa Quraish 🐱‍👤
 - Geoffrey Yu 🚀
-- Daniel Snider 😃
+- Daniel Snider 🤖
